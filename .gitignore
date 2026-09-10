@@ -40,6 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# local agent instruction files (Next.js may recreate these)
+# local generated files
 AGENTS.md
 CLAUDE.md
