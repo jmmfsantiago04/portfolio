@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "title": "João Marcos Martins de Faria Santiago | Portfólio",
+    "description": "Bem-vindo ao meu portfólio. Sou Desenvolvedor Frontend com paixão por criar aplicações web bonitas e funcionais."
+  },
+  "home": {
+    "eyebrow": "Portfólio",
+    "name": "João Marcos Martins de Faria Santiago",
+    "bio": "Bem-vindo ao meu portfólio. Sou Desenvolvedor Frontend com paixão por criar aplicações web bonitas e funcionais.",
+    "ctaPrimary": "Ver Projetos",
+    "ctaSecondary": "Fale Comigo"
+  },
+  "projects": {
+    "id": "projects",
+    "title": "Projetos",
+    "description": "Aqui estão alguns dos projetos que trabalhei.",
+    "projects": [
+      {
+        "title": "Projeto um",
+        "description": "Um app pequeno em que pratiquei layout, componentes e uma UI limpa.",
+        "longDescription": "O projeto um é um primeiro trabalho de portfólio focado em estrutura e reuso. Montei as telas principais, separei a UI em componentes e tentei deixar o código fácil de ler. O repositório no GitHub tem o código se quiser explorar.",
+        "linkLabel": "Ver no GitHub",
+        "githubUrl": "https://github.com/joaomfsantiago/your-project-one",
+        "image": "/projects/project-one.png",
+        "imageAlt": "Prévia do Projeto um"
+      },
+      {
+        "title": "Projeto dois",
+        "description": "Um projeto mais de funcionalidade, com formulários e estado da página.",
+        "longDescription": "O projeto dois vai um pouco além de uma página estática. Liguei ações do usuário, tratei estado simples e conferi se o fluxo ainda fazia sentido depois de um clique. O repositório no GitHub tem o código se quiser ver como isso se encaixa.",
+        "linkLabel": "Ver no GitHub",
+        "githubUrl": "https://github.com/joaomfsantiago/your-project-two",
+        "image": "/projects/project-two.png",
+        "imageAlt": "Prévia do Projeto dois"
+      },
+      {
+        "title": "Projeto três",
+        "description": "Um projeto pequeno sobre buscar dados e mostrá-los com clareza.",
+        "longDescription": "O projeto três é sobre pegar dados de uma API e transformar isso numa UI legível. Foquei em estados de carregamento, resultados vazios e um layout consistente. O repositório no GitHub tem o código se quiser seguir o caminho dos dados.",
+        "linkLabel": "Ver no GitHub",
+        "githubUrl": "https://github.com/joaomfsantiago/your-project-three",
+        "image": "/projects/project-three.png",
+        "imageAlt": "Prévia do Projeto três"
+      }
+    ]
+  },
+  "nav": {
+    "home": "JM",
+    "label": "Menu",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "about": {
+    "id": "about",
+    "title": "Sobre",
+    "body": "Sou desenvolvedor frontend e gosto de criar interfaces claras e acessíveis. Trabalho com React e Next.js, e uso este site para mostrar o que sei fazer.",
+    "skills": ["React", "Next.js", "TypeScript", "Tailwind"]
+  },
+  "contact": {
+    "id": "contact",
+    "title": "Contato",
+    "body": "A melhor forma de falar comigo é por e-mail.",
+    "emailLabel": "E-mail",
+    "email": "joaom.mfsantiago94@gmail.com",
+    "githubLabel": "GitHub",
+    "githubUrl": "https://github.com/joaomfsantiago",
+    "linkedinLabel": "LinkedIn",
+    "linkedinUrl": "https://www.linkedin.com/in/joaomfsantiago/"
+  },
+  "themeToggle": {
+    "label": "Alternar tema",
+    "toLight": "Mudar para o tema claro",
+    "toDark": "Mudar para o tema escuro"
+  },
+  "languageSwitcher": {
+    "label": "Idioma",
+    "en": "Inglês",
+    "pt": "Português"
+  }
+}
