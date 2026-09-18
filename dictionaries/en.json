@@ -16,13 +16,49 @@
     "description": "Here are some of the projects I've worked on.",
     "projects": [
       {
-        "title": "Project one",
-        "description": "A small app that taught me layout, components, and clean UI.",
-        "longDescription": "Project one is a first portfolio piece focused on structure and reuse. I built the main screens, split the UI into components, and practiced keeping the code easy to read. The GitHub repo has the source if you want to look around.",
+        "title": "É de Chão",
+        "description": "Public café site + authenticated admin for a São Paulo café brand.",
+        "longDescription": "Solo design+build of a Next.js café experience (É de Chão brand) with public pages (home, menu, story, reservations, blog) and an admin for menu, hours, reservations, and store status. Live on Vercel.",
         "linkLabel": "View on GitHub",
-        "githubUrl": "https://github.com/joaomfsantiago/your-project-one",
-        "image": "/projects/project-one.png",
-        "imageAlt": "Preview of Project one"
+        "githubUrl": "https://github.com/jmmfsantiago04/bel-cafe-sp",
+        "liveLabel": "View live site",
+        "liveUrl": "https://bel-cafe-sp-egsa.vercel.app/",
+        "image": "/projects/e-de-chao/home-hero.png",
+        "imageAlt": "Home hero of the É de Chão café website",
+        "gallery": [
+          {
+            "src": "/projects/e-de-chao/home-hero.png",
+            "alt": "Home hero of the É de Chão café website"
+          },
+          {
+            "src": "/projects/e-de-chao/menu.png",
+            "alt": "Public menu page of É de Chão"
+          },
+          {
+            "src": "/projects/e-de-chao/sobre-nos.png",
+            "alt": "About us page of É de Chão"
+          },
+          {
+            "src": "/projects/e-de-chao/reservas.png",
+            "alt": "Reservations page of É de Chão"
+          },
+          {
+            "src": "/projects/e-de-chao/admin-dashboard.png",
+            "alt": "Admin dashboard of É de Chão"
+          },
+          {
+            "src": "/projects/e-de-chao/admin-menu.png",
+            "alt": "Admin menu management screen of É de Chão"
+          },
+          {
+            "src": "/projects/e-de-chao/admin-menu-edit.png",
+            "alt": "Admin dialog for editing a menu item on É de Chão"
+          },
+          {
+            "src": "/projects/e-de-chao/admin-reservations.png",
+            "alt": "Admin reservations screen of É de Chão"
+          }
+        ]
       },
       {
         "title": "Project two",

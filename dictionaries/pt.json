@@ -16,13 +16,49 @@
     "description": "Aqui estão alguns dos projetos que trabalhei.",
     "projects": [
       {
-        "title": "Projeto um",
-        "description": "Um app pequeno em que pratiquei layout, componentes e uma UI limpa.",
-        "longDescription": "O projeto um é um primeiro trabalho de portfólio focado em estrutura e reuso. Montei as telas principais, separei a UI em componentes e tentei deixar o código fácil de ler. O repositório no GitHub tem o código se quiser explorar.",
+        "title": "É de Chão",
+        "description": "Site público do café + admin autenticado para uma marca de café de São Paulo.",
+        "longDescription": "Design e desenvolvimento solo de uma experiência Next.js para o café É de Chão, com páginas públicas (início, cardápio, história, reservas, blog) e um admin para cardápio, horários, reservas e status da loja. No ar na Vercel.",
         "linkLabel": "Ver no GitHub",
-        "githubUrl": "https://github.com/joaomfsantiago/your-project-one",
-        "image": "/projects/project-one.png",
-        "imageAlt": "Prévia do Projeto um"
+        "githubUrl": "https://github.com/jmmfsantiago04/bel-cafe-sp",
+        "liveLabel": "Ver site ao vivo",
+        "liveUrl": "https://bel-cafe-sp-egsa.vercel.app/",
+        "image": "/projects/e-de-chao/home-hero.png",
+        "imageAlt": "Hero da página inicial do site do café É de Chão",
+        "gallery": [
+          {
+            "src": "/projects/e-de-chao/home-hero.png",
+            "alt": "Hero da página inicial do site do café É de Chão"
+          },
+          {
+            "src": "/projects/e-de-chao/menu.png",
+            "alt": "Página pública de cardápio do É de Chão"
+          },
+          {
+            "src": "/projects/e-de-chao/sobre-nos.png",
+            "alt": "Página Sobre Nós do É de Chão"
+          },
+          {
+            "src": "/projects/e-de-chao/reservas.png",
+            "alt": "Página de reservas do É de Chão"
+          },
+          {
+            "src": "/projects/e-de-chao/admin-dashboard.png",
+            "alt": "Painel administrativo do É de Chão"
+          },
+          {
+            "src": "/projects/e-de-chao/admin-menu.png",
+            "alt": "Tela de gestão de cardápio no admin do É de Chão"
+          },
+          {
+            "src": "/projects/e-de-chao/admin-menu-edit.png",
+            "alt": "Diálogo de edição de item do cardápio no admin do É de Chão"
+          },
+          {
+            "src": "/projects/e-de-chao/admin-reservations.png",
+            "alt": "Tela de reservas no admin do É de Chão"
+          }
+        ]
       },
       {
         "title": "Projeto dois",
