@@ -1,24 +1,24 @@
 {
   "metadata": {
     "title": "João Marcos Martins de Faria Santiago | Portfólio",
-    "description": "Bem-vindo ao meu portfólio. Sou Desenvolvedor Frontend com paixão por criar aplicações web bonitas e funcionais."
+    "description": "Desenvolvedor frontend criando apps Next.js polidos — cardápio, reservas, auth e admin."
   },
   "home": {
     "eyebrow": "Portfólio",
     "name": "João Marcos Martins de Faria Santiago",
-    "bio": "Bem-vindo ao meu portfólio. Sou Desenvolvedor Frontend com paixão por criar aplicações web bonitas e funcionais.",
+    "bio": "Eu construo apps web claros e responsivos com Next.js e TypeScript — das páginas públicas ao painel admin com autenticação.",
     "ctaPrimary": "Ver Projetos",
     "ctaSecondary": "Fale Comigo"
   },
   "projects": {
     "id": "projects",
     "title": "Projetos",
-    "description": "Aqui estão alguns dos projetos que trabalhei.",
+    "description": "Trabalhos selecionados: produtos full-stack em Next.js com demo ao vivo.",
     "projects": [
       {
         "title": "É de Chão",
-        "description": "Site full-stack de café com cardápio público, reservas e painel admin.",
-        "longDescription": "É de Chão é um site de café em Next.js para São Paulo: cardápio e páginas da história, status aberto/fechado no fuso de SP, fluxo de reservas com validação Zod e um admin protegido com Auth.js para cardápio, horários, descontos, blog e reservas. Os dados ficam no Neon (Postgres) via Drizzle. Demo ao vivo e código nos links abaixo.",
+        "description": "Site de café em São Paulo com cardápio ao vivo, reservas e admin completo.",
+        "longDescription": "É de Chão é um produto de café pronto para produção: cardápio e páginas da história, status aberto/fechado no fuso de São Paulo, reservas com validação Zod e um admin Auth.js para cardápio, horários, descontos, blog e reservas. Feito com Next.js, Tailwind, shadcn/ui, Neon Postgres e Drizzle — no ar na Vercel.",
         "linkLabel": "Ver no GitHub",
         "githubUrl": "https://github.com/jmmfsantiago04/bel-cafe-sp",
         "liveUrl": "https://bel-cafe-sp-egsa.vercel.app/",
@@ -66,8 +66,8 @@
       },
       {
         "title": "VetPay",
-        "description": "Plataforma de tele-vet com pets/consultas do cliente e CRM admin.",
-        "longDescription": "VetPay é um app de tele-veterinária em Next.js: páginas públicas, área do cliente para pets e agendamentos, e um CRM admin. Auth com NextAuth (Credentials + Google) e middleware por papel. Dados no Neon via Drizzle, com validação Zod nas server actions.",
+        "description": "Produto de tele-vet com pets e agendamentos do cliente, mais CRM admin por papel.",
+        "longDescription": "VetPay é um app de tele-veterinária com páginas de marketing, área do cliente para pets e consultas, e um CRM admin. NextAuth cobre e-mail/senha e Google, com redirects por papel e checagens de dono nas server actions. Stack: Next.js, Tailwind, Neon, Drizzle e Zod.",
         "linkLabel": "Ver no GitHub",
         "githubUrl": "https://github.com/jmmfsantiago04/new-vet",
         "liveUrl": "https://new-vet.vercel.app/",
@@ -114,13 +114,13 @@
         ]
       },
       {
-        "title": "Projeto três",
-        "description": "Um projeto pequeno sobre buscar dados e mostrá-los com clareza.",
-        "longDescription": "O projeto três é sobre pegar dados de uma API e transformar isso numa UI legível. Foquei em estados de carregamento, resultados vazios e um layout consistente. O repositório no GitHub tem o código se quiser seguir o caminho dos dados.",
-        "linkLabel": "Ver no GitHub",
-        "githubUrl": "https://github.com/joaomfsantiago/your-project-three",
+        "title": "Em breve",
+        "description": "O próximo é uma loja Stripe pequena — catálogo, carrinho e Checkout no portfólio.",
+        "longDescription": "O projeto três será um demo enxuto de comércio: produtos seedados, carrinho, Stripe Checkout e um admin fino de pedidos. O escopo mostra pagamentos de ponta a ponta sem virar outro CRUD enorme. Os links entram aqui quando a primeira versão estiver no ar.",
+        "linkLabel": "Perfil no GitHub",
+        "githubUrl": "https://github.com/jmmfsantiago04",
         "image": "/projects/project-three.png",
-        "imageAlt": "Prévia do Projeto três"
+        "imageAlt": "Espaço reservado para a futura loja Stripe"
       }
     ]
   },
@@ -134,7 +134,7 @@
   "about": {
     "id": "about",
     "title": "Sobre",
-    "body": "Sou desenvolvedor frontend e gosto de criar interfaces claras e acessíveis. Trabalho com React e Next.js, e uso este site para mostrar o que sei fazer.",
+    "body": "Sou desenvolvedor com foco em frontend, e cuido da camada de dados quando o produto precisa. Me importo com UI legível, formulários sólidos e demos que parecem prontas — não só tutoriais colados.",
     "skills": [
       "React",
       "Next.js",
@@ -150,11 +150,11 @@
   "contact": {
     "id": "contact",
     "title": "Contato",
-    "body": "A melhor forma de falar comigo é por e-mail.",
+    "body": "Quer falar sobre uma vaga ou um projeto? O e-mail é o caminho mais rápido.",
     "emailLabel": "E-mail",
-    "email": "joaom.mfsantiago94@gmail.com",
+    "email": "jmmf.santiago94@gmail.com",
     "githubLabel": "GitHub",
-    "githubUrl": "https://github.com/joaomfsantiago",
+    "githubUrl": "https://github.com/jmmfsantiago04",
     "linkedinLabel": "LinkedIn",
     "linkedinUrl": "https://www.linkedin.com/in/joaomfsantiago/"
   },

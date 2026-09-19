@@ -1,24 +1,24 @@
 {
   "metadata": {
     "title": "João Marcos Martins de Faria Santiago | Portfolio",
-    "description": "Welcome to my portfolio. I'm a Frontend Developer with a passion for creating beautiful and functional web applications."
+    "description": "Frontend developer building polished Next.js apps — menus, bookings, auth, and admin tools."
   },
   "home": {
     "eyebrow": "Portfolio",
     "name": "João Marcos Martins de Faria Santiago",
-    "bio": "Welcome to my portfolio. I'm a Frontend Developer with a passion for creating beautiful and functional web applications.",
+    "bio": "I build clear, responsive web apps with Next.js and TypeScript — from public marketing pages to auth-protected admin tools.",
     "ctaPrimary": "View Projects",
     "ctaSecondary": "Contact Me"
   },
   "projects": {
     "id": "projects",
     "title": "Projects",
-    "description": "Here are some of the projects I've worked on.",
+    "description": "Selected work: full-stack Next.js products with live demos.",
     "projects": [
       {
         "title": "É de Chão",
-        "description": "Full-stack café site with public menu, reservations, and an admin panel.",
-        "longDescription": "É de Chão is a Next.js café site for São Paulo: public menu and story pages, timezone-aware open/closed status, a reservation flow with Zod validation, and an Auth.js-protected admin for menu, hours, discounts, blog, and bookings. Data lives on Neon (Postgres) via Drizzle. Live demo and source are linked below.",
+        "description": "São Paulo café site with live menu, table reservations, and a full admin.",
+        "longDescription": "É de Chão is a production-style café product: public menu and story pages, São Paulo timezone open/closed status, a reservation flow validated with Zod, and an Auth.js admin for menu, hours, discounts, blog, and bookings. Built with Next.js, Tailwind, shadcn/ui, Neon Postgres, and Drizzle — deployed on Vercel.",
         "linkLabel": "View on GitHub",
         "githubUrl": "https://github.com/jmmfsantiago04/bel-cafe-sp",
         "liveUrl": "https://bel-cafe-sp-egsa.vercel.app/",
@@ -66,8 +66,8 @@
       },
       {
         "title": "VetPay",
-        "description": "Tele-vet platform with client pets/appointments and an admin CRM.",
-        "longDescription": "VetPay is a Next.js tele-veterinary app: public marketing pages, a client area for pets and bookings, and an admin CRM. Auth uses NextAuth (Credentials + Google) with role-based middleware. Data lives on Neon via Drizzle, with Zod validation on server actions.",
+        "description": "Tele-vet product with client pets & bookings plus a role-based admin CRM.",
+        "longDescription": "VetPay is a tele-veterinary app with marketing pages, a client area for pets and appointments, and an admin CRM. NextAuth handles email/password and Google sign-in with role-aware redirects and ownership checks on server actions. Stack: Next.js, Tailwind, Neon, Drizzle, and Zod.",
         "linkLabel": "View on GitHub",
         "githubUrl": "https://github.com/jmmfsantiago04/new-vet",
         "liveUrl": "https://new-vet.vercel.app/",
@@ -114,13 +114,13 @@
         ]
       },
       {
-        "title": "Project three",
-        "description": "A small project about fetching data and showing it clearly.",
-        "longDescription": "Project three is about taking data from an API and turning it into a readable UI. I focused on loading states, empty results, and keeping the layout consistent. The GitHub repo has the source if you want to follow the data path.",
-        "linkLabel": "View on GitHub",
-        "githubUrl": "https://github.com/joaomfsantiago/your-project-three",
+        "title": "Coming soon",
+        "description": "A small Stripe shop is next — catalog, cart, and Checkout for the portfolio.",
+        "longDescription": "Project three will be a compact commerce demo: seeded products, cart, Stripe Checkout, and a thin order admin. It’s scoped to show payments end-to-end without becoming another large CRUD app. Links will land here when the first version is live.",
+        "linkLabel": "GitHub profile",
+        "githubUrl": "https://github.com/jmmfsantiago04",
         "image": "/projects/project-three.png",
-        "imageAlt": "Preview of Project three"
+        "imageAlt": "Placeholder for the upcoming Stripe shop project"
       }
     ]
   },
@@ -134,7 +134,7 @@
   "about": {
     "id": "about",
     "title": "About",
-    "body": "I’m a frontend developer focused on building clear, accessible interfaces. I work with React and Next.js, and I’m using this site to show what I can do.",
+    "body": "I’m a frontend-focused developer who also owns the data layer when a product needs it. I care about readable UI, solid forms, and shipping demos that feel finished — not just tutorials glued together.",
     "skills": [
       "React",
       "Next.js",
@@ -150,11 +150,11 @@
   "contact": {
     "id": "contact",
     "title": "Contact",
-    "body": "The best way to reach me is by email.",
+    "body": "Want to talk about a role or a project? Email is the fastest way to reach me.",
     "emailLabel": "Email",
-    "email": "joaom.mfsantiago94@gmail.com",
+    "email": "jmmf.santiago94@gmail.com",
     "githubLabel": "GitHub",
-    "githubUrl": "https://github.com/joaomfsantiago",
+    "githubUrl": "https://github.com/jmmfsantiago04",
     "linkedinLabel": "LinkedIn",
     "linkedinUrl": "https://www.linkedin.com/in/joaomfsantiago/"
   },
