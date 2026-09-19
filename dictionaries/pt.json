@@ -17,57 +17,97 @@
     "projects": [
       {
         "title": "É de Chão",
-        "description": "Site público do café + admin autenticado para uma marca de café de São Paulo.",
-        "longDescription": "Design e desenvolvimento solo de uma experiência Next.js para o café É de Chão, com páginas públicas (início, cardápio, história, reservas, blog) e um admin para cardápio, horários, reservas e status da loja. No ar na Vercel.",
+        "description": "Site full-stack de café com cardápio público, reservas e painel admin.",
+        "longDescription": "É de Chão é um site de café em Next.js para São Paulo: cardápio e páginas da história, status aberto/fechado no fuso de SP, fluxo de reservas com validação Zod e um admin protegido com Auth.js para cardápio, horários, descontos, blog e reservas. Os dados ficam no Neon (Postgres) via Drizzle. Demo ao vivo e código nos links abaixo.",
         "linkLabel": "Ver no GitHub",
         "githubUrl": "https://github.com/jmmfsantiago04/bel-cafe-sp",
-        "liveLabel": "Ver site ao vivo",
         "liveUrl": "https://bel-cafe-sp-egsa.vercel.app/",
-        "image": "/projects/e-de-chao/home-hero.png",
-        "imageAlt": "Hero da página inicial do site do café É de Chão",
+        "liveLabel": "Site ao vivo",
+        "image": "/projects/e-de-chao/01-home-hero.png",
+        "imageAlt": "Hero da home do É de Chão",
         "gallery": [
           {
-            "src": "/projects/e-de-chao/home-hero.png",
-            "alt": "Hero da página inicial do site do café É de Chão"
+            "src": "/projects/e-de-chao/01-home-hero.png",
+            "alt": "Home com hero e status aberto/fechado"
           },
           {
-            "src": "/projects/e-de-chao/menu.png",
-            "alt": "Página pública de cardápio do É de Chão"
+            "src": "/projects/e-de-chao/03-menu-overview.png",
+            "alt": "Visão geral do cardápio público"
           },
           {
-            "src": "/projects/e-de-chao/sobre-nos.png",
-            "alt": "Página Sobre Nós do É de Chão"
+            "src": "/projects/e-de-chao/04-menu-cafe-manha-items.png",
+            "alt": "Itens do café da manhã com preços"
           },
           {
-            "src": "/projects/e-de-chao/reservas.png",
-            "alt": "Página de reservas do É de Chão"
+            "src": "/projects/e-de-chao/05-sobre-nos.png",
+            "alt": "Página Sobre nós / Nossa história"
           },
           {
-            "src": "/projects/e-de-chao/admin-dashboard.png",
-            "alt": "Painel administrativo do É de Chão"
+            "src": "/projects/e-de-chao/06-reservas.png",
+            "alt": "Formulário de reservas"
           },
           {
-            "src": "/projects/e-de-chao/admin-menu.png",
-            "alt": "Tela de gestão de cardápio no admin do É de Chão"
+            "src": "/projects/e-de-chao/10-admin-menu.png",
+            "alt": "Admin: gestão do cardápio"
           },
           {
-            "src": "/projects/e-de-chao/admin-menu-edit.png",
-            "alt": "Diálogo de edição de item do cardápio no admin do É de Chão"
+            "src": "/projects/e-de-chao/11-admin-menu-edit.png",
+            "alt": "Admin: diálogo de editar item"
           },
           {
-            "src": "/projects/e-de-chao/admin-reservations.png",
-            "alt": "Tela de reservas no admin do É de Chão"
+            "src": "/projects/e-de-chao/12-admin-reservations.png",
+            "alt": "Admin: painel de reservas"
           }
         ]
       },
       {
-        "title": "Projeto dois",
-        "description": "Um projeto mais de funcionalidade, com formulários e estado da página.",
-        "longDescription": "O projeto dois vai um pouco além de uma página estática. Liguei ações do usuário, tratei estado simples e conferi se o fluxo ainda fazia sentido depois de um clique. O repositório no GitHub tem o código se quiser ver como isso se encaixa.",
+        "title": "VetPay",
+        "description": "Plataforma de tele-vet com pets/consultas do cliente e CRM admin.",
+        "longDescription": "VetPay é um app de tele-veterinária em Next.js: páginas públicas, área do cliente para pets e agendamentos, e um CRM admin. Auth com NextAuth (Credentials + Google) e middleware por papel. Dados no Neon via Drizzle, com validação Zod nas server actions.",
         "linkLabel": "Ver no GitHub",
-        "githubUrl": "https://github.com/joaomfsantiago/your-project-two",
-        "image": "/projects/project-two.png",
-        "imageAlt": "Prévia do Projeto dois"
+        "githubUrl": "https://github.com/jmmfsantiago04/new-vet",
+        "liveUrl": "https://new-vet.vercel.app/",
+        "liveLabel": "Site ao vivo",
+        "image": "/projects/vetpay/01-home-v3.png",
+        "imageAlt": "Home do VetPay",
+        "gallery": [
+          {
+            "src": "/projects/vetpay/01-home-v3.png",
+            "alt": "Home do VetPay com hero"
+          },
+          {
+            "src": "/projects/vetpay/02-services-v3.png",
+            "alt": "Serviços e cards de preço"
+          },
+          {
+            "src": "/projects/vetpay/06-login-v3.png",
+            "alt": "Login com e-mail e Google"
+          },
+          {
+            "src": "/projects/vetpay/09-cliente-dashboard-v3.png",
+            "alt": "Dashboard do cliente e formulário de pet"
+          },
+          {
+            "src": "/projects/vetpay/11-cliente-pet-v3.png",
+            "alt": "Gestão de pets do cliente"
+          },
+          {
+            "src": "/projects/vetpay/10-cliente-profile-v3.png",
+            "alt": "Perfil e configurações do cliente"
+          },
+          {
+            "src": "/projects/vetpay/07-admin-dashboard-v3.png",
+            "alt": "Painel admin"
+          },
+          {
+            "src": "/projects/vetpay/08-admin-appointments-v3.png",
+            "alt": "Admin: consultas"
+          },
+          {
+            "src": "/projects/vetpay/05-faq-v3.png",
+            "alt": "Página de dúvidas"
+          }
+        ]
       },
       {
         "title": "Projeto três",
@@ -91,7 +131,17 @@
     "id": "about",
     "title": "Sobre",
     "body": "Sou desenvolvedor frontend e gosto de criar interfaces claras e acessíveis. Trabalho com React e Next.js, e uso este site para mostrar o que sei fazer.",
-    "skills": ["React", "Next.js", "TypeScript", "Tailwind"]
+    "skills": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind",
+      "Auth.js",
+      "Neon",
+      "Drizzle",
+      "Zod",
+      "shadcn/ui"
+    ]
   },
   "contact": {
     "id": "contact",

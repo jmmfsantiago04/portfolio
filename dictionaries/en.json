@@ -17,57 +17,97 @@
     "projects": [
       {
         "title": "É de Chão",
-        "description": "Public café site + authenticated admin for a São Paulo café brand.",
-        "longDescription": "Solo design+build of a Next.js café experience (É de Chão brand) with public pages (home, menu, story, reservations, blog) and an admin for menu, hours, reservations, and store status. Live on Vercel.",
+        "description": "Full-stack café site with public menu, reservations, and an admin panel.",
+        "longDescription": "É de Chão is a Next.js café site for São Paulo: public menu and story pages, timezone-aware open/closed status, a reservation flow with Zod validation, and an Auth.js-protected admin for menu, hours, discounts, blog, and bookings. Data lives on Neon (Postgres) via Drizzle. Live demo and source are linked below.",
         "linkLabel": "View on GitHub",
         "githubUrl": "https://github.com/jmmfsantiago04/bel-cafe-sp",
-        "liveLabel": "View live site",
         "liveUrl": "https://bel-cafe-sp-egsa.vercel.app/",
-        "image": "/projects/e-de-chao/home-hero.png",
-        "imageAlt": "Home hero of the É de Chão café website",
+        "liveLabel": "Live site",
+        "image": "/projects/e-de-chao/01-home-hero.png",
+        "imageAlt": "É de Chão home page hero",
         "gallery": [
           {
-            "src": "/projects/e-de-chao/home-hero.png",
-            "alt": "Home hero of the É de Chão café website"
+            "src": "/projects/e-de-chao/01-home-hero.png",
+            "alt": "Home page with hero and open/closed status"
           },
           {
-            "src": "/projects/e-de-chao/menu.png",
-            "alt": "Public menu page of É de Chão"
+            "src": "/projects/e-de-chao/03-menu-overview.png",
+            "alt": "Public menu overview"
           },
           {
-            "src": "/projects/e-de-chao/sobre-nos.png",
-            "alt": "About us page of É de Chão"
+            "src": "/projects/e-de-chao/04-menu-cafe-manha-items.png",
+            "alt": "Breakfast menu items with prices"
           },
           {
-            "src": "/projects/e-de-chao/reservas.png",
-            "alt": "Reservations page of É de Chão"
+            "src": "/projects/e-de-chao/05-sobre-nos.png",
+            "alt": "About us / Our story page"
           },
           {
-            "src": "/projects/e-de-chao/admin-dashboard.png",
-            "alt": "Admin dashboard of É de Chão"
+            "src": "/projects/e-de-chao/06-reservas.png",
+            "alt": "Reservation form"
           },
           {
-            "src": "/projects/e-de-chao/admin-menu.png",
-            "alt": "Admin menu management screen of É de Chão"
+            "src": "/projects/e-de-chao/10-admin-menu.png",
+            "alt": "Admin menu management"
           },
           {
-            "src": "/projects/e-de-chao/admin-menu-edit.png",
-            "alt": "Admin dialog for editing a menu item on É de Chão"
+            "src": "/projects/e-de-chao/11-admin-menu-edit.png",
+            "alt": "Admin edit menu item dialog"
           },
           {
-            "src": "/projects/e-de-chao/admin-reservations.png",
-            "alt": "Admin reservations screen of É de Chão"
+            "src": "/projects/e-de-chao/12-admin-reservations.png",
+            "alt": "Admin reservations dashboard"
           }
         ]
       },
       {
-        "title": "Project two",
-        "description": "A feature-focused build where I worked with forms and page state.",
-        "longDescription": "Project two goes a bit further than a static page. I wired user actions, handled simple state, and made sure the flow still made sense after a click. The GitHub repo has the source if you want to see how it fits together.",
+        "title": "VetPay",
+        "description": "Tele-vet platform with client pets/appointments and an admin CRM.",
+        "longDescription": "VetPay is a Next.js tele-veterinary app: public marketing pages, a client area for pets and bookings, and an admin CRM. Auth uses NextAuth (Credentials + Google) with role-based middleware. Data lives on Neon via Drizzle, with Zod validation on server actions.",
         "linkLabel": "View on GitHub",
-        "githubUrl": "https://github.com/joaomfsantiago/your-project-two",
-        "image": "/projects/project-two.png",
-        "imageAlt": "Preview of Project two"
+        "githubUrl": "https://github.com/jmmfsantiago04/new-vet",
+        "liveUrl": "https://new-vet.vercel.app/",
+        "liveLabel": "Live site",
+        "image": "/projects/vetpay/01-home-v3.png",
+        "imageAlt": "VetPay home page",
+        "gallery": [
+          {
+            "src": "/projects/vetpay/01-home-v3.png",
+            "alt": "VetPay home page hero"
+          },
+          {
+            "src": "/projects/vetpay/02-services-v3.png",
+            "alt": "Services and pricing cards"
+          },
+          {
+            "src": "/projects/vetpay/06-login-v3.png",
+            "alt": "Login with email and Google"
+          },
+          {
+            "src": "/projects/vetpay/09-cliente-dashboard-v3.png",
+            "alt": "Client dashboard and add pet form"
+          },
+          {
+            "src": "/projects/vetpay/11-cliente-pet-v3.png",
+            "alt": "Client pet management"
+          },
+          {
+            "src": "/projects/vetpay/10-cliente-profile-v3.png",
+            "alt": "Client profile settings"
+          },
+          {
+            "src": "/projects/vetpay/07-admin-dashboard-v3.png",
+            "alt": "Admin dashboard"
+          },
+          {
+            "src": "/projects/vetpay/08-admin-appointments-v3.png",
+            "alt": "Admin appointments"
+          },
+          {
+            "src": "/projects/vetpay/05-faq-v3.png",
+            "alt": "FAQ page"
+          }
+        ]
       },
       {
         "title": "Project three",
@@ -91,7 +131,17 @@
     "id": "about",
     "title": "About",
     "body": "I’m a frontend developer focused on building clear, accessible interfaces. I work with React and Next.js, and I’m using this site to show what I can do.",
-    "skills": ["React", "Next.js", "TypeScript", "Tailwind"]
+    "skills": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind",
+      "Auth.js",
+      "Neon",
+      "Drizzle",
+      "Zod",
+      "shadcn/ui"
+    ]
   },
   "contact": {
     "id": "contact",
