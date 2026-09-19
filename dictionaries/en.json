@@ -31,12 +31,16 @@
             "alt": "Home page with hero and open/closed status"
           },
           {
-            "src": "/projects/e-de-chao/03-menu-overview.png",
-            "alt": "Public menu overview"
+            "src": "/projects/e-de-chao/03-menu-overview-v2.png",
+            "alt": "Menu overview with hero and category navigation"
           },
           {
-            "src": "/projects/e-de-chao/04-menu-cafe-manha-items.png",
-            "alt": "Breakfast menu items with prices"
+            "src": "/projects/e-de-chao/04-menu-cafe-manha-items-v2.png",
+            "alt": "Breakfast items: Cuscuz, Tapioca, and Pão de Queijo"
+          },
+          {
+            "src": "/projects/e-de-chao/04b-menu-almoco-items-v2.png",
+            "alt": "Lunch items: Baião de Dois, Moqueca, and Escondidinho"
           },
           {
             "src": "/projects/e-de-chao/05-sobre-nos.png",

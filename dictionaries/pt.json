@@ -31,12 +31,16 @@
             "alt": "Home com hero e status aberto/fechado"
           },
           {
-            "src": "/projects/e-de-chao/03-menu-overview.png",
-            "alt": "Visão geral do cardápio público"
+            "src": "/projects/e-de-chao/03-menu-overview-v2.png",
+            "alt": "Visão geral do cardápio com hero e navegação"
           },
           {
-            "src": "/projects/e-de-chao/04-menu-cafe-manha-items.png",
-            "alt": "Itens do café da manhã com preços"
+            "src": "/projects/e-de-chao/04-menu-cafe-manha-items-v2.png",
+            "alt": "Itens de café da manhã: Cuscuz, Tapioca e Pão de Queijo"
+          },
+          {
+            "src": "/projects/e-de-chao/04b-menu-almoco-items-v2.png",
+            "alt": "Itens de almoço: Baião de Dois, Moqueca e Escondidinho"
           },
           {
             "src": "/projects/e-de-chao/05-sobre-nos.png",
