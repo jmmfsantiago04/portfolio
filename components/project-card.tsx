@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 import {
   Dialog,
@@ -52,6 +53,7 @@ export function ProjectCard({
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const [dialogOpen, setDialogOpen] = useState(false);
 
   useEffect(() => {
     if (!api) return;
@@ -68,42 +70,81 @@ export function ProjectCard({
   }, [api]);
 
   useEffect(() => {
+    if (!dialogOpen || gallery.length < 2) return;
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+
+      // Don't steal arrows from inputs/textareas
+      const target = event.target as HTMLElement | null;
+      if (target) {
+        const tag = target.tagName;
+        if (tag === "INPUT" || tag === "TEXTAREA" || target.isContentEditable) {
+          return;
+        }
+      }
+
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (lightboxIndex !== null) {
+        setLightboxIndex((index) => {
+          if (index === null) return null;
+          return event.key === "ArrowLeft"
+            ? (index - 1 + gallery.length) % gallery.length
+            : (index + 1) % gallery.length;
+        });
+        return;
+      }
+
+      if (!api) return;
+      if (event.key === "ArrowLeft") api.scrollPrev();
+      else api.scrollNext();
+    };
+
+    window.addEventListener("keydown", onKeyDown, true);
+    return () => window.removeEventListener("keydown", onKeyDown, true);
+  }, [dialogOpen, lightboxIndex, gallery.length, api]);
+
+  useEffect(() => {
     if (lightboxIndex === null) return;
 
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
+        event.preventDefault();
+        event.stopPropagation();
         setLightboxIndex(null);
-        return;
-      }
-      if (event.key === "ArrowLeft") {
-        setLightboxIndex((index) =>
-          index === null ? null : (index - 1 + gallery.length) % gallery.length,
-        );
-        return;
-      }
-      if (event.key === "ArrowRight") {
-        setLightboxIndex((index) =>
-          index === null ? null : (index + 1) % gallery.length,
-        );
       }
     };
 
-    window.addEventListener("keydown", onKeyDown);
+    window.addEventListener("keydown", onKeyDown, true);
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
 
     return () => {
-      window.removeEventListener("keydown", onKeyDown);
+      window.removeEventListener("keydown", onKeyDown, true);
       document.body.style.overflow = previousOverflow;
     };
-  }, [lightboxIndex, gallery.length]);
+  }, [lightboxIndex]);
+
+  // Keep carousel in sync when browsing inside the lightbox
+  useEffect(() => {
+    if (lightboxIndex === null || !api) return;
+    api.scrollTo(lightboxIndex);
+  }, [lightboxIndex, api]);
 
   const lightboxShot =
     lightboxIndex === null ? null : gallery[lightboxIndex] ?? null;
 
   return (
     <>
-      <Dialog>
+      <Dialog
+        open={dialogOpen}
+        onOpenChange={(open) => {
+          setDialogOpen(open);
+          if (!open) setLightboxIndex(null);
+        }}
+      >
         <DialogTrigger
           render={
             <button
@@ -130,7 +171,10 @@ export function ProjectCard({
           </span>
         </DialogTrigger>
 
-        <DialogContent className="max-h-[90vh] gap-0 overflow-y-auto p-0 sm:max-w-3xl">
+        <DialogContent
+          className="max-h-[90vh] gap-0 overflow-y-auto p-0 sm:max-w-3xl"
+          overlayClassName="bg-black/80 backdrop-blur-sm"
+        >
           <div className="border-b border-border bg-gradient-to-b from-muted/80 to-muted/30 px-4 pb-3 pt-4 sm:px-6">
             <Carousel
               setApi={setApi}
@@ -225,9 +269,10 @@ export function ProjectCard({
         </DialogContent>
       </Dialog>
 
-      {lightboxShot ? (
+      {lightboxShot && typeof document !== "undefined"
+        ? createPortal(
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/85 p-4 backdrop-blur-sm"
+          className="fixed inset-0 z-[200] flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
           role="dialog"
           aria-modal="true"
           aria-label={lightboxShot.alt}
@@ -300,8 +345,10 @@ export function ProjectCard({
               ) : null}
             </p>
           </div>
-        </div>
-      ) : null}
+        </div>,
+        document.body,
+      )
+        : null}
     </>
   );
 }
