@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "title": "João Marcos Martins de Faria Santiago | Portfólio",
-    "description": "Desenvolvedor frontend criando apps Next.js polidos — cardápio, reservas, auth e admin."
+    "title": "João Marcos Santiago | Portfólio",
+    "description": "Desenvolvedor front-end — React, Next.js e Tailwind. Interfaces modernas do Figma ao produto no ar."
   },
   "home": {
-    "eyebrow": "Portfólio",
-    "name": "João Marcos Martins de Faria Santiago",
-    "bio": "Eu construo apps web claros e responsivos com Next.js e TypeScript — das páginas públicas ao painel admin com autenticação.",
-    "ctaPrimary": "Ver Projetos",
-    "ctaSecondary": "Fale Comigo"
+    "eyebrow": "Desenvolvedor Front-end",
+    "name": "João Marcos Santiago",
+    "bio": "Interfaces modernas com React e Next.js — do Figma ao produto no ar. Experiência em operação e foco em UI clara para o usuário.",
+    "ctaPrimary": "Ver projetos",
+    "ctaSecondary": "Fale comigo"
   },
   "projects": {
     "id": "projects",
@@ -134,8 +134,8 @@
   "about": {
     "id": "about",
     "title": "Sobre",
-    "body": "Sou desenvolvedor com foco em frontend, e cuido da camada de dados quando o produto precisa. Me importo com UI legível, formulários sólidos e demos que parecem prontas — não só tutoriais colados.",
     "skills": [
+      "Figma",
       "React",
       "Next.js",
       "TypeScript",
@@ -145,6 +145,11 @@
       "Drizzle",
       "Zod",
       "shadcn/ui"
+    ],
+    "paragraphs": [
+      "Sou desenvolvedor front-end e crio interfaces modernas com React, Next.js e Tailwind — do layout no Figma à UI no ar. Gosto de transformar ideias em produtos claros, rápidos e agradáveis de usar.",
+      "Antes da tecnologia, passei mais de três anos na operação de restaurante e delivery: liderança de equipe, atendimento, vendas e treino. Isso me deu ritmo sob pressão, comunicação direta e olhar de negócio para o que o usuário (e o time) precisa no dia a dia.",
+      "Quero crescer em front-end em times que valorizam colaboração, qualidade e aprendizado contínuo — e contribuir com interfaces bem feitas de ponta a ponta."
     ]
   },
   "contact": {
@@ -152,11 +157,11 @@
     "title": "Contato",
     "body": "Quer falar sobre uma vaga ou um projeto? O e-mail é o caminho mais rápido.",
     "emailLabel": "E-mail",
-    "email": "jmmf.santiago94@gmail.com",
+    "email": "joaom.mfsantiago94@gmail.com",
     "githubLabel": "GitHub",
     "githubUrl": "https://github.com/jmmfsantiago04",
     "linkedinLabel": "LinkedIn",
-    "linkedinUrl": "https://www.linkedin.com/in/joaomfsantiago/"
+    "linkedinUrl": "https://www.linkedin.com/in/joao-marcos-santiago-870b1b391/"
   },
   "themeToggle": {
     "label": "Alternar tema",

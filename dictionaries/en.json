@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "title": "João Marcos Martins de Faria Santiago | Portfolio",
-    "description": "Frontend developer building polished Next.js apps — menus, bookings, auth, and admin tools."
+    "title": "João Marcos Santiago | Portfolio",
+    "description": "Front-end developer — React, Next.js, and Tailwind. Modern interfaces from Figma to production."
   },
   "home": {
-    "eyebrow": "Portfolio",
-    "name": "João Marcos Martins de Faria Santiago",
-    "bio": "I build clear, responsive web apps with Next.js and TypeScript — from public marketing pages to auth-protected admin tools.",
+    "eyebrow": "Front-end Developer",
+    "name": "João Marcos Santiago",
+    "bio": "Modern interfaces with React and Next.js — from Figma to production. Ops background, focus on clear UI for real users.",
     "ctaPrimary": "View Projects",
     "ctaSecondary": "Contact Me"
   },
@@ -134,8 +134,8 @@
   "about": {
     "id": "about",
     "title": "About",
-    "body": "I’m a frontend-focused developer who also owns the data layer when a product needs it. I care about readable UI, solid forms, and shipping demos that feel finished — not just tutorials glued together.",
     "skills": [
+      "Figma",
       "React",
       "Next.js",
       "TypeScript",
@@ -145,6 +145,11 @@
       "Drizzle",
       "Zod",
       "shadcn/ui"
+    ],
+    "paragraphs": [
+      "I'm a front-end developer building modern interfaces with React, Next.js, and Tailwind — from Figma layouts to UI in production. I like turning ideas into products that feel clear, fast, and good to use.",
+      "Before tech, I spent more than three years in restaurant and delivery operations: leading teams, customer service, sales, and training. That gave me pace under pressure, direct communication, and a business eye for what users (and the team) need day to day.",
+      "I want to grow in front-end on teams that value collaboration, quality, and continuous learning — and to ship well-made interfaces end to end."
     ]
   },
   "contact": {
@@ -152,11 +157,11 @@
     "title": "Contact",
     "body": "Want to talk about a role or a project? Email is the fastest way to reach me.",
     "emailLabel": "Email",
-    "email": "jmmf.santiago94@gmail.com",
+    "email": "joaom.mfsantiago94@gmail.com",
     "githubLabel": "GitHub",
     "githubUrl": "https://github.com/jmmfsantiago04",
     "linkedinLabel": "LinkedIn",
-    "linkedinUrl": "https://www.linkedin.com/in/joaomfsantiago/"
+    "linkedinUrl": "https://www.linkedin.com/in/joao-marcos-santiago-870b1b391/"
   },
   "themeToggle": {
     "label": "Toggle theme",

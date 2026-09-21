@@ -108,7 +108,7 @@ export function ProjectCard({
           render={
             <button
               type="button"
-              className="flex h-full w-full flex-col overflow-hidden rounded-xl border border-border bg-card text-left text-card-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none"
+              className="group flex h-full w-full flex-col overflow-hidden rounded-xl border border-brand/25 bg-card text-left text-card-foreground shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand/50 hover:shadow-md hover:shadow-brand/10 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none"
             />
           }
         >
@@ -118,7 +118,7 @@ export function ProjectCard({
               alt={project.imageAlt}
               fill
               sizes="(max-width: 640px) 100vw, 50vw"
-              className="object-cover"
+              className="object-cover transition duration-500 group-hover:scale-[1.03]"
               priority={priority}
             />
           </span>
