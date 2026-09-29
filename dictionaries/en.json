@@ -23,44 +23,46 @@
         "githubUrl": "https://github.com/jmmfsantiago04/bel-cafe-sp",
         "liveUrl": "https://bel-cafe-sp-egsa.vercel.app/",
         "liveLabel": "Live site",
-        "image": "/projects/e-de-chao/01-home-hero.png",
-        "imageAlt": "É de Chão home page hero",
+        "docsUrl": "https://github.com/jmmfsantiago04/bel-cafe-sp/blob/master/README.md",
+        "docsLabel": "README",
+        "image": "/projects/e-de-chao/01-home-hero-v4.png",
+        "imageAlt": "É de Chão home page hero (viewport)",
         "gallery": [
           {
-            "src": "/projects/e-de-chao/01-home-hero.png",
-            "alt": "Home page with hero and open/closed status"
+            "src": "/projects/e-de-chao/01-home-hero-v4.png",
+            "alt": "É de Chão home page hero (viewport)"
           },
           {
-            "src": "/projects/e-de-chao/03-menu-overview-v2.png",
-            "alt": "Menu overview with hero and category navigation"
+            "src": "/projects/e-de-chao/02-menu-overview-vp.png",
+            "alt": "Menu overview with category navigation"
           },
           {
-            "src": "/projects/e-de-chao/04-menu-cafe-manha-items-v2.png",
-            "alt": "Breakfast items: Cuscuz, Tapioca, and Pão de Queijo"
+            "src": "/projects/e-de-chao/03-menu-cafe-manha-vp.png",
+            "alt": "Breakfast menu items"
           },
           {
-            "src": "/projects/e-de-chao/04b-menu-almoco-items-v2.png",
-            "alt": "Lunch items: Baião de Dois, Moqueca, and Escondidinho"
+            "src": "/projects/e-de-chao/04-menu-almoco-vp.png",
+            "alt": "Lunch menu items"
           },
           {
-            "src": "/projects/e-de-chao/05-sobre-nos.png",
-            "alt": "About us / Our story page"
+            "src": "/projects/e-de-chao/05-sobre-nos-vp.png",
+            "alt": "About us page"
           },
           {
-            "src": "/projects/e-de-chao/06-reservas.png",
-            "alt": "Reservation form"
+            "src": "/projects/e-de-chao/06-reservas-vp.png",
+            "alt": "Reservations page"
           },
           {
-            "src": "/projects/e-de-chao/10-admin-menu.png",
+            "src": "/projects/e-de-chao/07-admin-menu-vp.png",
             "alt": "Admin menu management"
           },
           {
-            "src": "/projects/e-de-chao/11-admin-menu-edit.png",
+            "src": "/projects/e-de-chao/08-admin-menu-edit-vp.png",
             "alt": "Admin edit menu item dialog"
           },
           {
-            "src": "/projects/e-de-chao/12-admin-reservations.png",
-            "alt": "Admin reservations dashboard"
+            "src": "/projects/e-de-chao/09-admin-reservations-vp.png",
+            "alt": "Admin reservations"
           }
         ]
       },
@@ -72,44 +74,42 @@
         "githubUrl": "https://github.com/jmmfsantiago04/new-vet",
         "liveUrl": "https://new-vet.vercel.app/",
         "liveLabel": "Live site",
-        "image": "/projects/vetpay/01-home-v3.png",
-        "imageAlt": "VetPay home page",
+        "docsUrl": "https://github.com/jmmfsantiago04/new-vet/blob/master/README.md",
+        "docsLabel": "README",
+        "image": "/projects/vetpay/01-home-vp.png",
+        "imageAlt": "VetPay home page hero",
         "gallery": [
           {
-            "src": "/projects/vetpay/01-home-v3.png",
+            "src": "/projects/vetpay/01-home-vp.png",
             "alt": "VetPay home page hero"
           },
           {
-            "src": "/projects/vetpay/02-services-v3.png",
-            "alt": "Services and pricing cards"
+            "src": "/projects/vetpay/02-services-vp.png",
+            "alt": "Services and pricing"
           },
           {
-            "src": "/projects/vetpay/06-login-v3.png",
+            "src": "/projects/vetpay/03-faq-vp.png",
+            "alt": "FAQ page"
+          },
+          {
+            "src": "/projects/vetpay/04-login-vp.png",
             "alt": "Login with email and Google"
           },
           {
-            "src": "/projects/vetpay/09-cliente-dashboard-v3.png",
-            "alt": "Client dashboard and add pet form"
+            "src": "/projects/vetpay/07-cliente-dashboard-vp.png",
+            "alt": "Client dashboard"
           },
           {
-            "src": "/projects/vetpay/11-cliente-pet-v3.png",
-            "alt": "Client pet management"
+            "src": "/projects/vetpay/08-cliente-pets-vp.png",
+            "alt": "Client pets section"
           },
           {
-            "src": "/projects/vetpay/10-cliente-profile-v3.png",
-            "alt": "Client profile settings"
-          },
-          {
-            "src": "/projects/vetpay/07-admin-dashboard-v3.png",
+            "src": "/projects/vetpay/05-admin-dashboard-vp.png",
             "alt": "Admin dashboard"
           },
           {
-            "src": "/projects/vetpay/08-admin-appointments-v3.png",
+            "src": "/projects/vetpay/06-admin-appointments-vp.png",
             "alt": "Admin appointments"
-          },
-          {
-            "src": "/projects/vetpay/05-faq-v3.png",
-            "alt": "FAQ page"
           }
         ]
       },
@@ -123,27 +123,27 @@
         "liveLabel": "Live site",
         "docsUrl": "https://github.com/jmmfsantiago04/stripe-shop/blob/main/README.md",
         "docsLabel": "README",
-        "image": "/projects/lumen-desk/01-home.png",
+        "image": "/projects/lumen-desk/01-home-vp.png",
         "imageAlt": "Lumen Desk home",
         "gallery": [
           {
-            "src": "/projects/lumen-desk/01-home.png",
+            "src": "/projects/lumen-desk/01-home-vp.png",
             "alt": "Lumen Desk home"
           },
           {
-            "src": "/projects/lumen-desk/02-catalog-filter.png",
-            "alt": "Catalog filter with mouse search"
+            "src": "/projects/lumen-desk/02-catalog-vp2.png",
+            "alt": "Catalog with filters and product grid"
           },
           {
-            "src": "/projects/lumen-desk/03-pdp.png",
+            "src": "/projects/lumen-desk/03-pdp-vp.png",
             "alt": "Product detail page"
           },
           {
-            "src": "/projects/lumen-desk/04-cart.png",
+            "src": "/projects/lumen-desk/04-cart-vp.png",
             "alt": "Shopping cart"
           },
           {
-            "src": "/projects/lumen-desk/05-admin-orders.png",
+            "src": "/projects/lumen-desk/05-admin-orders-vp.png",
             "alt": "Admin orders"
           }
         ]
