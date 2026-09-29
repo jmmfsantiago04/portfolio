@@ -114,13 +114,39 @@
         ]
       },
       {
-        "title": "Em breve",
-        "description": "O próximo é uma loja Stripe pequena — catálogo, carrinho e Checkout no portfólio.",
-        "longDescription": "O projeto três será um demo enxuto de comércio: produtos seedados, carrinho, Stripe Checkout e um admin fino de pedidos. O escopo mostra pagamentos de ponta a ponta sem virar outro CRUD enorme. Os links entram aqui quando a primeira versão estiver no ar.",
-        "linkLabel": "Perfil no GitHub",
-        "githubUrl": "https://github.com/jmmfsantiago04",
-        "image": "/projects/project-three.png",
-        "imageAlt": "Espaço reservado para a futura loja Stripe"
+        "title": "Lumen Desk",
+        "description": "Loja demo de desk setup com catálogo, carrinho e Stripe Checkout.",
+        "longDescription": "Lumen Desk é um demo de e-commerce pro portfólio: produtos seedados, carrinho em localStorage, Stripe Checkout, webhooks que gravam pedidos no Neon e um admin enxuto com filtros. Stack: Next.js, Tailwind, shadcn/ui, Drizzle, Neon, Stripe — na Vercel.",
+        "linkLabel": "Ver no GitHub",
+        "githubUrl": "https://github.com/jmmfsantiago04/stripe-shop",
+        "liveUrl": "https://stripe-shop-two.vercel.app",
+        "liveLabel": "Site ao vivo",
+        "docsUrl": "https://github.com/jmmfsantiago04/stripe-shop/blob/main/README.pt.md",
+        "docsLabel": "README",
+        "image": "/projects/lumen-desk/01-home.png",
+        "imageAlt": "Home da Lumen Desk",
+        "gallery": [
+          {
+            "src": "/projects/lumen-desk/01-home.png",
+            "alt": "Home da Lumen Desk"
+          },
+          {
+            "src": "/projects/lumen-desk/02-catalog-filter.png",
+            "alt": "Filtro do catálogo com busca de mouse"
+          },
+          {
+            "src": "/projects/lumen-desk/03-pdp.png",
+            "alt": "Página de detalhe do produto"
+          },
+          {
+            "src": "/projects/lumen-desk/04-cart.png",
+            "alt": "Carrinho de compras"
+          },
+          {
+            "src": "/projects/lumen-desk/05-admin-orders.png",
+            "alt": "Pedidos no admin"
+          }
+        ]
       }
     ]
   },

@@ -114,13 +114,39 @@
         ]
       },
       {
-        "title": "Coming soon",
-        "description": "A small Stripe shop is next — catalog, cart, and Checkout for the portfolio.",
-        "longDescription": "Project three will be a compact commerce demo: seeded products, cart, Stripe Checkout, and a thin order admin. It’s scoped to show payments end-to-end without becoming another large CRUD app. Links will land here when the first version is live.",
-        "linkLabel": "GitHub profile",
-        "githubUrl": "https://github.com/jmmfsantiago04",
-        "image": "/projects/project-three.png",
-        "imageAlt": "Placeholder for the upcoming Stripe shop project"
+        "title": "Lumen Desk",
+        "description": "Desk-setup store demo with catalog, cart, and Stripe Checkout.",
+        "longDescription": "Lumen Desk is a portfolio commerce demo: seeded products, localStorage cart, Stripe Checkout, webhooks that save orders to Neon, and a thin admin with filters. Stack: Next.js, Tailwind, shadcn/ui, Drizzle, Neon, Stripe — on Vercel.",
+        "linkLabel": "View on GitHub",
+        "githubUrl": "https://github.com/jmmfsantiago04/stripe-shop",
+        "liveUrl": "https://stripe-shop-two.vercel.app",
+        "liveLabel": "Live site",
+        "docsUrl": "https://github.com/jmmfsantiago04/stripe-shop/blob/main/README.md",
+        "docsLabel": "README",
+        "image": "/projects/lumen-desk/01-home.png",
+        "imageAlt": "Lumen Desk home",
+        "gallery": [
+          {
+            "src": "/projects/lumen-desk/01-home.png",
+            "alt": "Lumen Desk home"
+          },
+          {
+            "src": "/projects/lumen-desk/02-catalog-filter.png",
+            "alt": "Catalog filter with mouse search"
+          },
+          {
+            "src": "/projects/lumen-desk/03-pdp.png",
+            "alt": "Product detail page"
+          },
+          {
+            "src": "/projects/lumen-desk/04-cart.png",
+            "alt": "Shopping cart"
+          },
+          {
+            "src": "/projects/lumen-desk/05-admin-orders.png",
+            "alt": "Admin orders"
+          }
+        ]
       }
     ]
   },

@@ -50,6 +50,16 @@ export function ProjectCard({
       ? project.liveLabel
       : "Live site";
 
+  const docsUrl =
+    "docsUrl" in project && typeof project.docsUrl === "string"
+      ? project.docsUrl
+      : undefined;
+
+  const docsLabel =
+    "docsLabel" in project && typeof project.docsLabel === "string"
+      ? project.docsLabel
+      : "README";
+
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
@@ -254,6 +264,16 @@ export function ProjectCard({
                 className={cn(buttonVariants({ variant: "default" }))}
               >
                 {liveLabel}
+              </a>
+            ) : null}
+            {docsUrl ? (
+              <a
+                href={docsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cn(buttonVariants({ variant: "secondary" }))}
+              >
+                {docsLabel}
               </a>
             ) : null}
             <a
