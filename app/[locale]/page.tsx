@@ -139,7 +139,7 @@ export default async function Home({
             {dictionary.projects.projects.map((project, index) => (
               <li key={project.title}>
                 <Reveal delayMs={index * 80}>
-                  <ProjectCard project={project} priority={index < 2} />
+                  <ProjectCard project={project} labels={dictionary.projects.caseLabels} priority={index < 2} />
                 </Reveal>
               </li>
             ))}

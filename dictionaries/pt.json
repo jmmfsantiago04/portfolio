@@ -14,10 +14,40 @@
     "id": "projects",
     "title": "Projetos",
     "description": "Trabalhos selecionados: produtos full-stack em Next.js com demo ao vivo.",
+    "caseLabels": {
+      "problem": "Problema",
+      "solution": "Solução",
+      "stack": "Stack",
+      "features": "Funcionalidades",
+      "challenges": "Desafios"
+    },
     "projects": [
       {
         "title": "É de Chão",
         "description": "Site de café em São Paulo: cardápio ao vivo, reservas e admin da equipe.",
+        "problem": "Cafés espalham Instagram, reserva no WhatsApp e cardápio em planilha.",
+        "solution": "Um app Next.js: cardápio ao vivo, aberto/fechado em SP, reservas validadas, admin Auth.js pro dia a dia.",
+        "stack": [
+          "Next.js",
+          "Tailwind",
+          "shadcn/ui",
+          "Auth.js",
+          "Neon",
+          "Drizzle",
+          "Zod",
+          "Vercel"
+        ],
+        "features": [
+          "Cardápio e história",
+          "Reservas com Zod",
+          "Aberto/fechado (America/Sao_Paulo)",
+          "Admin: cardápio, horários, descontos, blog, reservas"
+        ],
+        "challenges": [
+          "Status no fuso certo",
+          "Validar reserva antes de gravar",
+          "Admin tipo CMS sem inchá-lo"
+        ],
         "longDescription": "Os cafés que eu via ficavam entre Instagram, reserva no WhatsApp e cardápio em planilha. Montei o É de Chão pra o cliente ver o cardápio ao vivo, se a casa está aberta no horário de SP, e reservar mesa sem sair do site. A equipe edita cardápio, horários, descontos, blog e reservas no admin (Auth.js). Subi com Next.js, Neon e Drizzle na Vercel.",
         "linkLabel": "Ver no GitHub",
         "githubUrl": "https://github.com/jmmfsantiago04/bel-cafe-sp",
@@ -69,6 +99,29 @@
       {
         "title": "VetPay",
         "description": "Demo de tele-vet com pets/consultas do cliente e um CRM admin enxuto.",
+        "problem": "Marketing, portal do cliente e mesa da clínica em ferramentas diferentes, permissões confusas.",
+        "solution": "Um app com papéis: marketing, pets/consultas do cliente, CRM admin.",
+        "stack": [
+          "Next.js",
+          "Tailwind",
+          "NextAuth",
+          "Neon",
+          "Drizzle",
+          "Zod",
+          "Vercel"
+        ],
+        "features": [
+          "Marketing",
+          "Login e-mail/senha + Google",
+          "Pets e consultas",
+          "CRM admin",
+          "Redirects por papel"
+        ],
+        "challenges": [
+          "Redirects por papel",
+          "Server actions só nos seus registros",
+          "Separar área cliente e admin"
+        ],
         "longDescription": "No VetPay eu treinei papéis de verdade. Na frente, páginas de marketing; logado, o cliente cuida dos próprios pets e consultas; admin tem CRM. NextAuth (e-mail/senha + Google) redireciona por papel, e as server actions garantem que você só mexe nos seus registros. Next.js App Router, Neon, Drizzle, Zod.",
         "linkLabel": "Ver no GitHub",
         "githubUrl": "https://github.com/jmmfsantiago04/new-vet",
@@ -116,6 +169,29 @@
       {
         "title": "Lumen Desk",
         "description": "Loja de desk setup que fecha no Stripe e lista pedidos pagos.",
+        "problem": "Lojas de portfólio param no catálogo bonito, sem pagamento de verdade.",
+        "solution": "Fluxo Stripe enxuto: catálogo → carrinho → pagar → pedido no admin.",
+        "stack": [
+          "Next.js",
+          "Tailwind",
+          "shadcn/ui",
+          "Neon",
+          "Drizzle",
+          "Stripe",
+          "Vercel"
+        ],
+        "features": [
+          "Catálogo e PDP",
+          "Carrinho localStorage",
+          "Stripe Checkout",
+          "Webhook → pedidos Neon",
+          "Admin magro (busca, filtros, detalhe)"
+        ],
+        "challenges": [
+          "Checkout Session no server",
+          "stripe listen local vs webhook Vercel",
+          "Admin propositalmente pequeno"
+        ],
         "longDescription": "O Lumen Desk é um slice de e-commerce pra provar o caminho Stripe de verdade. Produtos no Neon; carrinho no localStorage; Checkout Session no server; checkout.session.completed grava o pedido pago. Em local precisa do stripe listen; em produção, o webhook da Vercel. Admin magro: senha, busca, filtros, detalhe do pedido.",
         "linkLabel": "Ver no GitHub",
         "githubUrl": "https://github.com/jmmfsantiago04/stripe-shop",

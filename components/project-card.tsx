@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
 import {
@@ -28,11 +28,44 @@ import type { Dictionary } from "@/lib/get-dictionary";
 type Project = Dictionary["projects"]["projects"][number];
 type GalleryShot = { src: string; alt: string };
 
+type CaseLabels = Dictionary["projects"]["caseLabels"];
+
+function asText(value: unknown) {
+  return typeof value === "string" && value.trim().length > 0 ? value : undefined;
+}
+
+function asList(value: unknown) {
+  if (!Array.isArray(value)) return undefined;
+  const items = value.filter(
+    (item): item is string => typeof item === "string" && item.trim().length > 0,
+  );
+  return items.length > 0 ? items : undefined;
+}
+
+function CaseBlock({
+  title,
+  children,
+}: {
+  title: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="space-y-1.5">
+      <h3 className="text-xs font-medium tracking-wide text-foreground">
+        {title}
+      </h3>
+      {children}
+    </div>
+  );
+}
+
 export function ProjectCard({
   project,
+  labels,
   priority = false,
 }: {
   project: Project;
+  labels: CaseLabels;
   priority?: boolean;
 }) {
   const gallery: GalleryShot[] =
@@ -59,6 +92,15 @@ export function ProjectCard({
     "docsLabel" in project && typeof project.docsLabel === "string"
       ? project.docsLabel
       : "README";
+
+  const problem = asText("problem" in project ? project.problem : undefined);
+  const solution = asText("solution" in project ? project.solution : undefined);
+  const stack = asList("stack" in project ? project.stack : undefined);
+  const features = asList("features" in project ? project.features : undefined);
+  const challenges = asList(
+    "challenges" in project ? project.challenges : undefined,
+  );
+  const hasCase = Boolean(problem || solution || stack || features || challenges);
 
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
@@ -248,12 +290,63 @@ export function ProjectCard({
             ) : null}
           </div>
 
-          <DialogHeader className="gap-3 p-5 sm:p-6">
+          <DialogHeader className="gap-2 px-5 pt-5 sm:px-6 sm:pt-6">
             <DialogTitle className="text-lg">{project.title}</DialogTitle>
             <DialogDescription className="text-sm leading-relaxed">
-              {project.longDescription}
+              {hasCase ? project.description : project.longDescription}
             </DialogDescription>
           </DialogHeader>
+
+          {hasCase ? (
+            <div className="space-y-4 px-5 pb-5 pt-4 sm:px-6">
+              {problem ? (
+                <CaseBlock title={labels.problem}>
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    {problem}
+                  </p>
+                </CaseBlock>
+              ) : null}
+              {solution ? (
+                <CaseBlock title={labels.solution}>
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    {solution}
+                  </p>
+                </CaseBlock>
+              ) : null}
+              {stack ? (
+                <CaseBlock title={labels.stack}>
+                  <ul className="flex flex-wrap gap-1.5">
+                    {stack.map((item) => (
+                      <li
+                        key={item}
+                        className="rounded-full border border-brand/30 bg-brand/10 px-2.5 py-0.5 text-xs text-foreground"
+                      >
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </CaseBlock>
+              ) : null}
+              {features ? (
+                <CaseBlock title={labels.features}>
+                  <ul className="list-disc space-y-1 pl-4 text-sm leading-relaxed text-muted-foreground">
+                    {features.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </CaseBlock>
+              ) : null}
+              {challenges ? (
+                <CaseBlock title={labels.challenges}>
+                  <ul className="list-disc space-y-1 pl-4 text-sm leading-relaxed text-muted-foreground">
+                    {challenges.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </CaseBlock>
+              ) : null}
+            </div>
+          ) : null}
 
           <div className="flex flex-wrap justify-end gap-2 border-t border-border bg-muted/40 p-4 sm:p-5">
             {liveUrl ? (

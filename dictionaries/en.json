@@ -14,10 +14,40 @@
     "id": "projects",
     "title": "Projects",
     "description": "Selected work: full-stack Next.js products with live demos.",
+    "caseLabels": {
+      "problem": "Problem",
+      "solution": "Solution",
+      "stack": "Stack",
+      "features": "Features",
+      "challenges": "Challenges"
+    },
     "projects": [
       {
         "title": "É de Chão",
         "description": "Café site for São Paulo: live menu, bookings, and a staff admin.",
+        "problem": "Cafés split Instagram, WhatsApp bookings, and a spreadsheet menu.",
+        "solution": "One Next.js app: live menu, SP open/closed, validated reservations, Auth.js admin for day-to-day ops.",
+        "stack": [
+          "Next.js",
+          "Tailwind",
+          "shadcn/ui",
+          "Auth.js",
+          "Neon",
+          "Drizzle",
+          "Zod",
+          "Vercel"
+        ],
+        "features": [
+          "Live menu & story",
+          "Reservations with Zod",
+          "Open/closed (America/Sao_Paulo)",
+          "Admin: menu, hours, discounts, blog, bookings"
+        ],
+        "challenges": [
+          "Timezone-correct open status",
+          "Validating bookings before insert",
+          "CMS-style admin without overbuilding"
+        ],
         "longDescription": "Cafés around me were stuck between Instagram, WhatsApp bookings, and a menu in a spreadsheet. I built É de Chão so guests see the live menu, whether the house is open in São Paulo time, and can reserve a table without leaving the site. Staff edit menu, hours, discounts, blog, and bookings behind Auth.js. Shipped with Next.js, Neon, and Drizzle on Vercel.",
         "linkLabel": "View on GitHub",
         "githubUrl": "https://github.com/jmmfsantiago04/bel-cafe-sp",
@@ -69,6 +99,29 @@
       {
         "title": "VetPay",
         "description": "Tele-vet demo with client pets/appointments and a small admin CRM.",
+        "problem": "Marketing, client portal, and clinic desk live in different tools with fuzzy permissions.",
+        "solution": "One app with roles: marketing front, client pets/appointments, admin CRM.",
+        "stack": [
+          "Next.js",
+          "Tailwind",
+          "NextAuth",
+          "Neon",
+          "Drizzle",
+          "Zod",
+          "Vercel"
+        ],
+        "features": [
+          "Marketing pages",
+          "Email/password + Google login",
+          "Client pets & appointments",
+          "Admin CRM",
+          "Role redirects"
+        ],
+        "challenges": [
+          "Role-based redirects",
+          "Server actions that only touch your own records",
+          "Keeping client and admin surfaces separate"
+        ],
         "longDescription": "VetPay is where I practiced roles properly. Marketing pages sit in front; signed-in clients manage their own pets and appointments; admins get a CRM. NextAuth (email/password + Google) redirects by role, and server actions check that you only touch your own records. Next.js App Router, Neon, Drizzle, Zod.",
         "linkLabel": "View on GitHub",
         "githubUrl": "https://github.com/jmmfsantiago04/new-vet",
@@ -116,6 +169,29 @@
       {
         "title": "Lumen Desk",
         "description": "Desk-setup shop that checks out with Stripe and lists paid orders.",
+        "problem": "Portfolio shops often stop at a pretty catalog without a real payment path.",
+        "solution": "Small Stripe Checkout flow: catalog → cart → pay → order in admin.",
+        "stack": [
+          "Next.js",
+          "Tailwind",
+          "shadcn/ui",
+          "Neon",
+          "Drizzle",
+          "Stripe",
+          "Vercel"
+        ],
+        "features": [
+          "Seeded catalog & PDP",
+          "localStorage cart",
+          "Stripe Checkout",
+          "Webhook → Neon orders",
+          "Thin admin (search, filters, detail)"
+        ],
+        "challenges": [
+          "Server-side Checkout Session",
+          "Local stripe listen vs Vercel webhook",
+          "Keeping admin intentionally small"
+        ],
         "longDescription": "Lumen Desk is a small commerce slice built to prove a real Stripe path. Products live in Neon; the cart stays in localStorage; Checkout Sessions are created on the server; checkout.session.completed writes the paid order. Locally that needs stripe listen; production uses the Vercel webhook. Admin stays thin: password, search, filters, order detail.",
         "linkLabel": "View on GitHub",
         "githubUrl": "https://github.com/jmmfsantiago04/stripe-shop",
