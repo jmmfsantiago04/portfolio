@@ -25,8 +25,8 @@
       {
         "title": "É de Chão",
         "description": "Site de café em São Paulo: cardápio ao vivo, reservas e admin da equipe.",
-        "problem": "Cafés espalham Instagram, reserva no WhatsApp e cardápio em planilha.",
-        "solution": "Um app Next.js: cardápio ao vivo, aberto/fechado em SP, reservas validadas, admin Auth.js pro dia a dia.",
+        "problem": "Os cafés que eu via misturavam Instagram, reservas no WhatsApp e cardápio em planilha. O cliente não confiava no que estava publicado nem se a casa estava aberta, e a equipe repetia as mesmas respostas o dia todo.",
+        "solution": "Eu montei um app Next.js em que o visitante vê o cardápio ao vivo, o status no fuso de São Paulo e reserva com formulário validado. No admin (Auth.js) a equipe edita cardápio, horários, descontos, blog e reservas no Neon/Drizzle — operação do dia a dia, sem CMS inchado.",
         "stack": [
           "Next.js",
           "Tailwind",
@@ -38,15 +38,15 @@
           "Vercel"
         ],
         "features": [
-          "Cardápio e história",
-          "Reservas com Zod",
-          "Aberto/fechado (America/Sao_Paulo)",
-          "Admin: cardápio, horários, descontos, blog, reservas"
+          "Entreguei cardápio ao vivo confiável",
+          "Liguei reserva com Zod antes do insert",
+          "Amarrei aberto/fechado a America/Sao_Paulo",
+          "Montei o admin de cardápio, horários, descontos, blog e reservas"
         ],
         "challenges": [
-          "Status no fuso certo",
-          "Validar reserva antes de gravar",
-          "Admin tipo CMS sem inchá-lo"
+          "Precisei acertar o status aberto nas bordas de fuso",
+          "Barrei reservas inválidas antes do Neon",
+          "Mantive o admin \"tipo CMS\" sem inchá-lo"
         ],
         "longDescription": "Os cafés que eu via ficavam entre Instagram, reserva no WhatsApp e cardápio em planilha. Montei o É de Chão pra o cliente ver o cardápio ao vivo, se a casa está aberta no horário de SP, e reservar mesa sem sair do site. A equipe edita cardápio, horários, descontos, blog e reservas no admin (Auth.js). Subi com Next.js, Neon e Drizzle na Vercel.",
         "linkLabel": "Ver no GitHub",
@@ -99,8 +99,8 @@
       {
         "title": "VetPay",
         "description": "Demo de tele-vet com pets/consultas do cliente e um CRM admin enxuto.",
-        "problem": "Marketing, portal do cliente e mesa da clínica em ferramentas diferentes, permissões confusas.",
-        "solution": "Um app com papéis: marketing, pets/consultas do cliente, CRM admin.",
+        "problem": "Eu via marketing da clínica, portal do cliente e balcão em ferramentas distintas — permissão confusa e os mesmos dados de pet/consulta digitados de novo.",
+        "solution": "Fiz um app Next.js com papéis claros: marketing na frente, cliente cuidando dos próprios pets e consultas, e um CRM admin enxuto. NextAuth (e-mail/senha + Google) redireciona por role; nas server actions eu só deixo mexer nos registros de quem está logado.",
         "stack": [
           "Next.js",
           "Tailwind",
@@ -111,16 +111,16 @@
           "Vercel"
         ],
         "features": [
-          "Marketing",
-          "Login e-mail/senha + Google",
-          "Pets e consultas",
-          "CRM admin",
-          "Redirects por papel"
+          "Coloquei o marketing na frente",
+          "Adicionei login e-mail/senha + Google",
+          "Dei ao cliente pets e consultas",
+          "Montei um CRM admin enxuto",
+          "Liguei redirects por role após o login"
         ],
         "challenges": [
-          "Redirects por papel",
-          "Server actions só nos seus registros",
-          "Separar área cliente e admin"
+          "Precisei mandar cada papel pra superfície certa",
+          "Limitei server actions aos registros de quem está logado",
+          "Separei bem a UX cliente vs admin"
         ],
         "longDescription": "No VetPay eu treinei papéis de verdade. Na frente, páginas de marketing; logado, o cliente cuida dos próprios pets e consultas; admin tem CRM. NextAuth (e-mail/senha + Google) redireciona por papel, e as server actions garantem que você só mexe nos seus registros. Next.js App Router, Neon, Drizzle, Zod.",
         "linkLabel": "Ver no GitHub",
@@ -169,8 +169,8 @@
       {
         "title": "Lumen Desk",
         "description": "Loja de desk setup que fecha no Stripe e lista pedidos pagos.",
-        "problem": "Lojas de portfólio param no catálogo bonito, sem pagamento de verdade.",
-        "solution": "Fluxo Stripe enxuto: catálogo → carrinho → pagar → pedido no admin.",
+        "problem": "Muita loja de portfólio para no catálogo bonito e não prova o caminho carrinho → pedido pago no banco.",
+        "solution": "Eu entreguei uma loja pequena de setup de mesa: catálogo no Neon, carrinho em localStorage, Checkout Session no server e o webhook gravando o pedido pago. Mantive o admin fino de propósito; no local uso `stripe listen`, em produção o webhook na Vercel.",
         "stack": [
           "Next.js",
           "Tailwind",
@@ -181,16 +181,16 @@
           "Vercel"
         ],
         "features": [
-          "Catálogo e PDP",
-          "Carrinho localStorage",
-          "Stripe Checkout",
-          "Webhook → pedidos Neon",
-          "Admin magro (busca, filtros, detalhe)"
+          "Seed do catálogo e PDP",
+          "Carrinho em localStorage",
+          "Checkout Session só no server",
+          "Pedidos pagos a partir do `checkout.session.completed`",
+          "Admin fino (busca, filtros, detalhe)"
         ],
         "challenges": [
-          "Checkout Session no server",
-          "stripe listen local vs webhook Vercel",
-          "Admin propositalmente pequeno"
+          "Evitei criar Session no client",
+          "Equilibrei `stripe listen` local vs webhook na Vercel",
+          "Mantive o admin pequeno de propósito"
         ],
         "longDescription": "O Lumen Desk é um slice de e-commerce pra provar o caminho Stripe de verdade. Produtos no Neon; carrinho no localStorage; Checkout Session no server; checkout.session.completed grava o pedido pago. Em local precisa do stripe listen; em produção, o webhook da Vercel. Admin magro: senha, busca, filtros, detalhe do pedido.",
         "linkLabel": "Ver no GitHub",

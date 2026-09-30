@@ -25,8 +25,8 @@
       {
         "title": "É de Chão",
         "description": "Café site for São Paulo: live menu, bookings, and a staff admin.",
-        "problem": "Cafés split Instagram, WhatsApp bookings, and a spreadsheet menu.",
-        "solution": "One Next.js app: live menu, SP open/closed, validated reservations, Auth.js admin for day-to-day ops.",
+        "problem": "The cafés around me were juggling Instagram, WhatsApp bookings, and a menu in a spreadsheet. Guests couldn’t trust what was current or whether the house was open, and staff kept answering the same questions by hand.",
+        "solution": "I built one Next.js app so guests see the live menu, São Paulo open/closed status, and can reserve with validated forms. Behind Auth.js I gave staff an admin for menu, hours, discounts, blog, and bookings on Neon/Drizzle — useful day to day, without a full CMS.",
         "stack": [
           "Next.js",
           "Tailwind",
@@ -38,15 +38,15 @@
           "Vercel"
         ],
         "features": [
-          "Live menu & story",
-          "Reservations with Zod",
-          "Open/closed (America/Sao_Paulo)",
-          "Admin: menu, hours, discounts, blog, bookings"
+          "I shipped a live menu guests can trust",
+          "I wired table booking with Zod before insert",
+          "I tied open/closed to America/Sao_Paulo",
+          "I built the staff admin for menu, hours, discounts, blog, and bookings"
         ],
         "challenges": [
-          "Timezone-correct open status",
-          "Validating bookings before insert",
-          "CMS-style admin without overbuilding"
+          "I had to get open status right across timezone edges",
+          "I blocked invalid bookings before they hit Neon",
+          "I kept the admin CMS-like without overbuilding"
         ],
         "longDescription": "Cafés around me were stuck between Instagram, WhatsApp bookings, and a menu in a spreadsheet. I built É de Chão so guests see the live menu, whether the house is open in São Paulo time, and can reserve a table without leaving the site. Staff edit menu, hours, discounts, blog, and bookings behind Auth.js. Shipped with Next.js, Neon, and Drizzle on Vercel.",
         "linkLabel": "View on GitHub",
@@ -99,8 +99,8 @@
       {
         "title": "VetPay",
         "description": "Tele-vet demo with client pets/appointments and a small admin CRM.",
-        "problem": "Marketing, client portal, and clinic desk live in different tools with fuzzy permissions.",
-        "solution": "One app with roles: marketing front, client pets/appointments, admin CRM.",
+        "problem": "I kept seeing clinic marketing, client portals, and the front desk live in different tools — fuzzy permissions and the same pet/appointment data typed twice.",
+        "solution": "I built one Next.js app with clear roles: marketing up front, clients managing their own pets and appointments, and a thin admin CRM. NextAuth (email/password + Google) redirects by role; my server actions only touch the signed-in user’s records.",
         "stack": [
           "Next.js",
           "Tailwind",
@@ -111,16 +111,16 @@
           "Vercel"
         ],
         "features": [
-          "Marketing pages",
-          "Email/password + Google login",
-          "Client pets & appointments",
-          "Admin CRM",
-          "Role redirects"
+          "I put marketing pages in front",
+          "I added email/password + Google sign-in",
+          "I gave clients pets and appointments",
+          "I built a thin admin CRM",
+          "I wired role-based redirects after login"
         ],
         "challenges": [
-          "Role-based redirects",
-          "Server actions that only touch your own records",
-          "Keeping client and admin surfaces separate"
+          "I had to land each role on the right surface",
+          "I scoped server actions to the signed-in user’s rows",
+          "I kept client and admin UX clearly separate"
         ],
         "longDescription": "VetPay is where I practiced roles properly. Marketing pages sit in front; signed-in clients manage their own pets and appointments; admins get a CRM. NextAuth (email/password + Google) redirects by role, and server actions check that you only touch your own records. Next.js App Router, Neon, Drizzle, Zod.",
         "linkLabel": "View on GitHub",
@@ -169,8 +169,8 @@
       {
         "title": "Lumen Desk",
         "description": "Desk-setup shop that checks out with Stripe and lists paid orders.",
-        "problem": "Portfolio shops often stop at a pretty catalog without a real payment path.",
-        "solution": "Small Stripe Checkout flow: catalog → cart → pay → order in admin.",
+        "problem": "Too many portfolio shops stop at a pretty catalog and never prove cart → paid order in a real database.",
+        "solution": "I shipped a small desk-setup store: Neon catalog, localStorage cart, Stripe Checkout Session on the server, and `checkout.session.completed` writing the paid order. I kept admin thin on purpose; locally I use `stripe listen`, in production the Vercel webhook.",
         "stack": [
           "Next.js",
           "Tailwind",
@@ -181,16 +181,16 @@
           "Vercel"
         ],
         "features": [
-          "Seeded catalog & PDP",
-          "localStorage cart",
-          "Stripe Checkout",
-          "Webhook → Neon orders",
-          "Thin admin (search, filters, detail)"
+          "I seeded the catalog and PDP",
+          "I kept the cart in localStorage",
+          "I create Stripe Checkout Sessions on the server",
+          "I write paid orders from `checkout.session.completed`",
+          "I shipped thin admin (search, filters, detail)"
         ],
         "challenges": [
-          "Server-side Checkout Session",
-          "Local stripe listen vs Vercel webhook",
-          "Keeping admin intentionally small"
+          "I refused client-side Session creation",
+          "I juggled local `stripe listen` vs the Vercel webhook",
+          "I kept admin intentionally small"
         ],
         "longDescription": "Lumen Desk is a small commerce slice built to prove a real Stripe path. Products live in Neon; the cart stays in localStorage; Checkout Sessions are created on the server; checkout.session.completed writes the paid order. Locally that needs stripe listen; production uses the Vercel webhook. Admin stays thin: password, search, filters, order detail.",
         "linkLabel": "View on GitHub",
