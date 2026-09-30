@@ -17,8 +17,8 @@
     "projects": [
       {
         "title": "É de Chão",
-        "description": "Site de café em São Paulo com cardápio ao vivo, reservas e admin completo.",
-        "longDescription": "É de Chão é um produto de café pronto para produção: cardápio e páginas da história, status aberto/fechado no fuso de São Paulo, reservas com validação Zod e um admin Auth.js para cardápio, horários, descontos, blog e reservas. Feito com Next.js, Tailwind, shadcn/ui, Neon Postgres e Drizzle — no ar na Vercel.",
+        "description": "Site de café em São Paulo: cardápio ao vivo, reservas e admin da equipe.",
+        "longDescription": "Os cafés que eu via ficavam entre Instagram, reserva no WhatsApp e cardápio em planilha. Montei o É de Chão pra o cliente ver o cardápio ao vivo, se a casa está aberta no horário de SP, e reservar mesa sem sair do site. A equipe edita cardápio, horários, descontos, blog e reservas no admin (Auth.js). Subi com Next.js, Neon e Drizzle na Vercel.",
         "linkLabel": "Ver no GitHub",
         "githubUrl": "https://github.com/jmmfsantiago04/bel-cafe-sp",
         "liveUrl": "https://bel-cafe-sp-egsa.vercel.app/",
@@ -68,8 +68,8 @@
       },
       {
         "title": "VetPay",
-        "description": "Produto de tele-vet com pets e agendamentos do cliente, mais CRM admin por papel.",
-        "longDescription": "VetPay é um app de tele-veterinária com páginas de marketing, área do cliente para pets e consultas, e um CRM admin. NextAuth cobre e-mail/senha e Google, com redirects por papel e checagens de dono nas server actions. Stack: Next.js, Tailwind, Neon, Drizzle e Zod.",
+        "description": "Demo de tele-vet com pets/consultas do cliente e um CRM admin enxuto.",
+        "longDescription": "No VetPay eu treinei papéis de verdade. Na frente, páginas de marketing; logado, o cliente cuida dos próprios pets e consultas; admin tem CRM. NextAuth (e-mail/senha + Google) redireciona por papel, e as server actions garantem que você só mexe nos seus registros. Next.js App Router, Neon, Drizzle, Zod.",
         "linkLabel": "Ver no GitHub",
         "githubUrl": "https://github.com/jmmfsantiago04/new-vet",
         "liveUrl": "https://new-vet.vercel.app/",
@@ -115,8 +115,8 @@
       },
       {
         "title": "Lumen Desk",
-        "description": "Loja demo de desk setup com catálogo, carrinho e Stripe Checkout.",
-        "longDescription": "Lumen Desk é um demo de e-commerce pro portfólio: produtos seedados, carrinho em localStorage, Stripe Checkout, webhooks que gravam pedidos no Neon e um admin enxuto com filtros. Stack: Next.js, Tailwind, shadcn/ui, Drizzle, Neon, Stripe — na Vercel.",
+        "description": "Loja de desk setup que fecha no Stripe e lista pedidos pagos.",
+        "longDescription": "O Lumen Desk é um slice de e-commerce pra provar o caminho Stripe de verdade. Produtos no Neon; carrinho no localStorage; Checkout Session no server; checkout.session.completed grava o pedido pago. Em local precisa do stripe listen; em produção, o webhook da Vercel. Admin magro: senha, busca, filtros, detalhe do pedido.",
         "linkLabel": "Ver no GitHub",
         "githubUrl": "https://github.com/jmmfsantiago04/stripe-shop",
         "liveUrl": "https://stripe-shop-two.vercel.app",

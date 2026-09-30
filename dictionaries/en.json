@@ -17,8 +17,8 @@
     "projects": [
       {
         "title": "É de Chão",
-        "description": "São Paulo café site with live menu, table reservations, and a full admin.",
-        "longDescription": "É de Chão is a production-style café product: public menu and story pages, São Paulo timezone open/closed status, a reservation flow validated with Zod, and an Auth.js admin for menu, hours, discounts, blog, and bookings. Built with Next.js, Tailwind, shadcn/ui, Neon Postgres, and Drizzle — deployed on Vercel.",
+        "description": "Café site for São Paulo: live menu, bookings, and a staff admin.",
+        "longDescription": "Cafés around me were stuck between Instagram, WhatsApp bookings, and a menu in a spreadsheet. I built É de Chão so guests see the live menu, whether the house is open in São Paulo time, and can reserve a table without leaving the site. Staff edit menu, hours, discounts, blog, and bookings behind Auth.js. Shipped with Next.js, Neon, and Drizzle on Vercel.",
         "linkLabel": "View on GitHub",
         "githubUrl": "https://github.com/jmmfsantiago04/bel-cafe-sp",
         "liveUrl": "https://bel-cafe-sp-egsa.vercel.app/",
@@ -68,8 +68,8 @@
       },
       {
         "title": "VetPay",
-        "description": "Tele-vet product with client pets & bookings plus a role-based admin CRM.",
-        "longDescription": "VetPay is a tele-veterinary app with marketing pages, a client area for pets and appointments, and an admin CRM. NextAuth handles email/password and Google sign-in with role-aware redirects and ownership checks on server actions. Stack: Next.js, Tailwind, Neon, Drizzle, and Zod.",
+        "description": "Tele-vet demo with client pets/appointments and a small admin CRM.",
+        "longDescription": "VetPay is where I practiced roles properly. Marketing pages sit in front; signed-in clients manage their own pets and appointments; admins get a CRM. NextAuth (email/password + Google) redirects by role, and server actions check that you only touch your own records. Next.js App Router, Neon, Drizzle, Zod.",
         "linkLabel": "View on GitHub",
         "githubUrl": "https://github.com/jmmfsantiago04/new-vet",
         "liveUrl": "https://new-vet.vercel.app/",
@@ -115,8 +115,8 @@
       },
       {
         "title": "Lumen Desk",
-        "description": "Desk-setup store demo with catalog, cart, and Stripe Checkout.",
-        "longDescription": "Lumen Desk is a portfolio commerce demo: seeded products, localStorage cart, Stripe Checkout, webhooks that save orders to Neon, and a thin admin with filters. Stack: Next.js, Tailwind, shadcn/ui, Drizzle, Neon, Stripe — on Vercel.",
+        "description": "Desk-setup shop that checks out with Stripe and lists paid orders.",
+        "longDescription": "Lumen Desk is a small commerce slice built to prove a real Stripe path. Products live in Neon; the cart stays in localStorage; Checkout Sessions are created on the server; checkout.session.completed writes the paid order. Locally that needs stripe listen; production uses the Vercel webhook. Admin stays thin: password, search, filters, order detail.",
         "linkLabel": "View on GitHub",
         "githubUrl": "https://github.com/jmmfsantiago04/stripe-shop",
         "liveUrl": "https://stripe-shop-two.vercel.app",
