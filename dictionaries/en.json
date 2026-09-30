@@ -173,9 +173,9 @@
       "shadcn/ui"
     ],
     "paragraphs": [
-      "I'm a front-end developer building modern interfaces with React, Next.js, and Tailwind — from Figma layouts to UI in production. I like turning ideas into products that feel clear, fast, and good to use.",
-      "Before tech, I spent more than three years in restaurant and delivery operations: leading teams, customer service, sales, and training. That gave me pace under pressure, direct communication, and a business eye for what users (and the team) need day to day.",
-      "I want to grow in front-end on teams that value collaboration, quality, and continuous learning — and to ship well-made interfaces end to end."
+      "I’m a front-end developer focused on React and Next.js — Figma to production UI with Tailwind and TypeScript. I also handle the server side the product needs (Auth.js, Neon/Drizzle, server actions, Stripe webhooks), still growing there, with the UI as my home base.",
+      "Before tech I spent 3+ years in restaurant and delivery ops: leading teams, customer service, sales, and training. That background is why I care about clear flows, not only pretty screens — menus, bookings, and admin tools people can use under pressure.",
+      "The projects here (café site, tele-vet, Stripe shop) are how I practice shipping that end to end. I’m looking for a front-end role where I keep building real product UI with a strong team."
     ]
   },
   "contact": {
